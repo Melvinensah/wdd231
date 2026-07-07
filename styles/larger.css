@@ -1,21 +1,17 @@
 @media screen and (min-width: 601px) {
-    
     /* Desktop: 3 column grid */
     #course-cards {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    /* Desktop: Horizontal Navigation */
+    /* Desktop: Hide Hamburger, Show Horizontal Nav */
+    #menu { display: none; }
     .nav-links { 
         display: flex !important; 
         flex-direction: row; 
-        gap: 30px; 
+        gap: 20px; 
+        background: none;
     }
-
-    /* Hide Hamburger on desktop */
-    #menu { 
-        display: none; 
-    }
+    .nav-links li a { border: none; padding: 0; }
 }

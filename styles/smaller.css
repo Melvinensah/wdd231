@@ -1,11 +1,35 @@
-/* Global Reset */
+:root {
+    --primary-color: #007bff;   /* Bright Blue */
+    --accent-color: #ffcc00;    /* Bright Yellow */
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --completed-bg: #d4edda;    /* Light Green */
+    --incomplete-bg: #fff3cd;    /* Light Yellow */
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Roboto', sans-serif; padding: 10px; }
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
+    padding: 10px; 
+}
+
+header { 
+    background-color: var(--primary-color); 
+    color: white; 
+    padding: 1rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
 
 /* Navigation (Mobile View) */
-#menu { display: block; font-size: 1.5rem; cursor: pointer; }
-.nav-links { display: none; list-style: none; padding: 10px 0; }
-.nav-links.show { display: flex; flex-direction: column; gap: 10px; }
+#menu { font-size: 1.8rem; background: none; color: white; border: none; cursor: pointer; }
+.nav-links { display: none; list-style: none; background: var(--primary-color); width: 100%; }
+.nav-links.show { display: flex; flex-direction: column; }
+.nav-links li a { color: white; text-decoration: none; padding: 1rem; display: block; border-top: 1px solid #0056b3; }
 
 /* Course Cards (Mobile: 1 column) */
 #course-cards {
@@ -17,14 +41,12 @@ body { font-family: 'Roboto', sans-serif; padding: 10px; }
 
 .card { 
     padding: 1.5rem; 
-    border: 1px solid #ddd; 
+    border-radius: 8px; 
     text-align: center; 
-    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
-/* Completion Status */
-.completed { background-color: #d4edda; border-left: 10px solid #28a745; }
-.incomplete { background-color: #f8d7da; border-left: 10px solid #dc3545; }
+.completed { background-color: var(--completed-bg); border-left: 8px solid #28a745; }
+.incomplete { background-color: var(--incomplete-bg); border-left: 8px solid #ffc107; }
 
-/* Typography */
-h1, h2 { margin-bottom: 15px; }
+footer { margin-top: 2rem; padding: 1rem; text-align: center; font-size: 0.9rem; }
