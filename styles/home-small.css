@@ -1,99 +1,37 @@
-* {
-    margin: auto 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+/* --- Base Styles --- */
+:root {
+    --primary-color: #333;
+    --card-bg: #e0e0e0;
+    --font-stack: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: rgb(40, 41, 41);
+    font-family: var(--font-stack);
+    margin: 0;
+    padding: 0;
 }
 
-header,
-footer {
-    max-width: 1000px;
-    width: 90%;
+/* --- Navigation (Responsive) --- */
+nav ul {
     display: flex;
-    margin: auto;
-    border-radius: 12px;
-    background: linear-gradient(#12a7e2, #6cffb5);
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
+    list-style: none;
+    gap: 20px;
 }
 
-header img {
-    border-radius: 12px;
-    margin-right: auto;
-    margin-left: 20px;
+/* Mobile: Hamburger logic */
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Toggle this with JS to 'flex' */
+        flex-direction: column;
+    }
 }
 
-header h1 {
-    font-size: 38px;
-    margin-left: auto;
-    margin-right: auto;
+/* --- Main Grid/List Layout --- */
+#course-cards {
+    display: grid;
+    /* Mobile: 1 column */
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
 }
 
-main {
-    max-width: 1000px;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #dfffdd;
-}
-
-main h2,
-p {
-    margin: 10px 0;
-}
-
-main ul {
-    text-align: left;
-    list-style-position: inside;
-    margin-left: 15px;
-}
-
-main ul li {
-    margin: 10px 0;
-}
-
-main ul li a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #0388c5;
-    text-transform: capitalize;
-}
-
-footer {
-    height: auto;
-    text-align: center;
-    padding: 10px 10px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #05425e;
-    font-weight: 500;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color: #012649;
-    font-weight: 500;
-}
-
-#firstLineFooter {
-    padding: 0;
-    color: #0a0c0c;
-}
-
-#secondLineFooter {
-    color: #016b9c;
-    text-align: center;
-    font-weight: 600;
-    font-style: italic;
-    padding: 0;
-}
