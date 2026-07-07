@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Course Certificate Planner for Web and Computer Programming">
-    <meta name="author" content="Your Name">
-    <title>WDD 131 - Course Certificate Planner</title>
-    <link rel="stylesheet" href="styles/home-small.css">
-    <link rel="stylesheet" href="styles/home-large.css">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/home.js" type="module" defer></script>
+    <meta name="description" content="WDD 231 Course Certificate Planner">
+    <meta name="author" content="Melvin Ensah Bunduka">
+    <title>WDD 231 - Course Certificate Planner</title>
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/courses.js" type="module" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" alt="Site Logo">
-        <span>Your Name</span>
-        <button id="menu" aria-label="Menu"></button>
+        <div class="logo">Logo</div>
+        <span>Melvin Ensah Bunduka</span>
+        <button id="menu" aria-label="Menu">&#9776;</button>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">Final</a></li>
@@ -38,7 +37,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Your Name, Country</p>
+        <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>

@@ -1,0 +1,30 @@
+/* Global Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; padding: 10px; }
+
+/* Navigation (Mobile View) */
+#menu { display: block; font-size: 1.5rem; cursor: pointer; }
+.nav-links { display: none; list-style: none; padding: 10px 0; }
+.nav-links.show { display: flex; flex-direction: column; gap: 10px; }
+
+/* Course Cards (Mobile: 1 column) */
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card { 
+    padding: 1.5rem; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+    border-radius: 8px;
+}
+
+/* Completion Status */
+.completed { background-color: #d4edda; border-left: 10px solid #28a745; }
+.incomplete { background-color: #f8d7da; border-left: 10px solid #dc3545; }
+
+/* Typography */
+h1, h2 { margin-bottom: 15px; }
