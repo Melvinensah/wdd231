@@ -6,33 +6,25 @@ const courses = [
     { subject: 'WDD', number: 131, title: 'Dynamic Web Fundamentals', credits: 2, completed: false },
     { subject: 'WDD', number: 231, title: 'Frontend Web Development I', credits: 2, completed: false }
 ];
-
-
-const container = document.querySelector("#course-cards");
-const totalCreditsDisplay = document.querySelector("#total-credits");
-
-function displayCourses(filter = "all") {
-    container.innerHTML = "";
-    let filtered = courses;
+function displayCourses(filter = 'All') {
+    const container = document.getElementById('course-cards');
+    container.innerHTML = '';
+    const filtered = filter === 'All' ? courses : courses.filter(c => c.subject === filter);
     
-    if (filter === "wdd") filtered = courses.filter(c => c.subject === "WDD");
-    if (filter === "cse") filtered = filtered.filter(c => c.subject === "CSE");
-
     filtered.forEach(course => {
-        const card = document.createElement("div");
-        card.classList.add("course-card");
-        if (course.completed) card.classList.add("completed");
-        
-        card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
-        container.appendChild(card);
+        const div = document.createElement('div');
+        div.className = course.completed ? 'card completed' : 'card';
+        div.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        container.appendChild(div);
     });
-
-    const total = filtered.reduce((sum, c) => sum + c.credits, 0);
-    totalCreditsDisplay.textContent = `Total Credits: ${total}`;
+    
+    document.getElementById('total-credits').textContent = 
+        `Total Credits: ${filtered.reduce((sum, c) => sum + c.credits, 0)}`;
 }
 
-document.querySelector("#all").addEventListener("click", () => displayCourses("all"));
-document.querySelector("#wdd").addEventListener("click", () => displayCourses("wdd"));
-document.querySelector("#cse").addEventListener("click", () => displayCourses("cse"));
-
-displayCourses(); // Initial load
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('all').addEventListener('click', () => displayCourses('All'));
+    document.getElementById('cse').addEventListener('click', () => displayCourses('CSE'));
+    document.getElementById('wdd').addEventListener('click', () => displayCourses('WDD'));
+    displayCourses();
+});

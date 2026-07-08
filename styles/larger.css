@@ -45,3 +45,10 @@ nav a {
     
 .course-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
 }
+
+@media (min-width: 768px) {
+    #menu-toggle { display: none; }
+    #nav-menu { display: flex !important; flex-direction: row; background: none; }
+    #nav-menu a { border: none; padding: 1rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+}
