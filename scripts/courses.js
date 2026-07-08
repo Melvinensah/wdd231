@@ -8,27 +8,31 @@ const courses = [
 ];
 
 
-const container = document.getElementById('course-cards');
-const totalCreditsDisplay = document.getElementById('total-credits');
+const container = document.querySelector("#course-cards");
+const totalCreditsDisplay = document.querySelector("#total-credits");
 
-function displayCourses(filter = 'All') {
-    container.innerHTML = '';
+function displayCourses(filter = "all") {
+    container.innerHTML = "";
     let filtered = courses;
-    if (filter === 'CSE') filtered = courses.filter(c => c.subject === 'CSE');
-    if (filter === 'WDD') filtered = courses.filter(c => c.subject === 'WDD');
+    
+    if (filter === "wdd") filtered = courses.filter(c => c.subject === "WDD");
+    if (filter === "cse") filtered = filtered.filter(c => c.subject === "CSE");
 
     filtered.forEach(course => {
-        const card = document.createElement('div');
-        card.className = `card ${course.completed ? 'completed' : 'incomplete'}`;
-        card.innerHTML = `<h3>${course.subject} ${course.number}</h3><p>${course.title}</p>`;
+        const card = document.createElement("div");
+        card.classList.add("course-card");
+        if (course.completed) card.classList.add("completed");
+        
+        card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
         container.appendChild(card);
     });
 
-    totalCreditsDisplay.textContent = `Total Credits: ${filtered.reduce((sum, c) => sum + c.credits, 0)}`;
+    const total = filtered.reduce((sum, c) => sum + c.credits, 0);
+    totalCreditsDisplay.textContent = `Total Credits: ${total}`;
 }
 
-document.querySelectorAll('.filter-buttons button').forEach(btn => {
-    btn.addEventListener('click', (e) => displayCourses(e.target.id.toUpperCase()));
-});
+document.querySelector("#all").addEventListener("click", () => displayCourses("all"));
+document.querySelector("#wdd").addEventListener("click", () => displayCourses("wdd"));
+document.querySelector("#cse").addEventListener("click", () => displayCourses("cse"));
 
-displayCourses();
+displayCourses(); // Initial load
