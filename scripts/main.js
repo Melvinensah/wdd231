@@ -1,3 +1,14 @@
+function initializeMobileMenu() {
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  if (!toggleBtn || !navMenu) return;
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+}
+
 const YearElement = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
 
@@ -15,3 +26,4 @@ if (updateElement){
 document.getElementById('menu').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('show');
 });
+

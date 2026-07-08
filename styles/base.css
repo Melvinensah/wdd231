@@ -13,6 +13,15 @@ body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text-co
 
 header { background-color: var(--primary-color); color: var(--white); padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
 
+#menu-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block; /* Shown explicitly on mobile */
+}
+
 /* Navigation */
 nav ul { display: none; list-style: none; flex-direction: column; }
 nav.show ul { display: flex; }
