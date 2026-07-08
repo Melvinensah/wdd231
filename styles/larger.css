@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     /* Navigation Desktop */
     #menu { display: none; }
     nav ul { display: flex !important; flex-direction: row; gap: 1rem; }
