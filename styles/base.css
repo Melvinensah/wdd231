@@ -23,7 +23,7 @@ header { background-color: var(--primary-color); color: var(--white); padding: 1
 }
 
 /* Navigation */
-nav ul { display: none; list-style: none; flex-direction: column; }
+nav ul { display: none; list-style: none; flex-direction: column; flex-direction: column;}
 nav.show ul { display: flex; }
 nav a { color: var(--white); text-decoration: none; padding: 0.8rem; display: block; transition: background-color 0.3s ease; }
 nav a:hover { background-color: var(--secondary-color); border-radius: 4px; }
