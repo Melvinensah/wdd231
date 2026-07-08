@@ -1,8 +1,22 @@
 @media (min-width: 768px) {
     /* Navigation Desktop */
-    #menu { display: none; }
-    nav ul { display: flex !important; flex-direction: row; gap: 1rem; }
+   #menu-toggle {
+  display: none !important; /* Removes mobile toggle option */
+}
 
+nav {
+  display: flex !important; /* Locks navigation block horizontal bar on view */
+  position: static;
+  flex-direction: row;
+  width: auto;
+  box-shadow: none;
+  padding: 0;
+}
+
+nav a {
+  border-bottom: none;
+  margin: 0 0.25rem;
+}
     /* Main Grid Layout (Matches Wireframe) */
     .grid.container {
         display: grid;
