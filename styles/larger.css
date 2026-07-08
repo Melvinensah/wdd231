@@ -1,41 +1,30 @@
-@media (min-width: 800px) {
-    /* 1. Reset Navigation for Desktop */
-    #menu {
-        display: none; /* Hide hamburger on desktop */
-    }
+@media (min-width: 600px) {
+    /* Navigation Desktop */
+    #menu { display: none; }
+    nav ul { display: flex !important; flex-direction: row; gap: 1rem; }
 
-    nav ul {
-        display: flex !important; /* Force flex row */
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    /* 2. Main Content Layout (The Grid) */
+    /* Main Grid Layout (Matches Wireframe) */
     .grid.container {
         display: grid;
-        grid-template-columns: 2fr 1fr; /* About/Courses (left) + Photo (right) */
+        grid-template-columns: 2fr 1fr;
         gap: 2rem;
         align-items: start;
     }
 
-    /* Target specific sections for layout placement */
-    #about {
-        grid-column: 1 / 2;
-    }
+    #about { grid-column: 1 / 2; }
+    #student-photo { grid-column: 2 / 3; text-align: center; }
+    #certificate { grid-column: 1 / 3; }
 
-    #student-photo {
-        grid-column: 2 / 3;
-        text-align: center;
-    }
-
-    #certificate {
-        grid-column: 1 / 3; /* Spans full width under the top two */
-    }
-
-    /* 3. Course Cards Grid (Inside the certificate section) */
+    /* Course Cards Grid (3 Columns) */
     #course-cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for course cards */
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
+
+    .course-card {
+        transition: transform 0.2s;
+    }
+    
+    .course-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
 }
