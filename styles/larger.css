@@ -1,6 +1,7 @@
 @media (min-width: 768px) {
     /* Navigation Desktop */
-   #menu-toggle {
+
+#menu-toggle {
   display: none !important; /* Removes mobile toggle option */
 }
 
@@ -17,28 +18,30 @@ nav a {
   border-bottom: none;
   margin: 0 0.25rem;
 }
-    /* Main Grid Layout (Matches Wireframe) */
-    .grid.container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-        align-items: start;
-    }
 
-    #about { grid-column: 1 / 2; }
-    #student-photo { grid-column: 2 / 3; text-align: center; }
-    #certificate { grid-column: 1 / 3; }
+
+    /* Main Grid Layout (Matches Wireframe) */
+.grid.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+#about { grid-column: 1 / 2; }
+#student-photo { grid-column: 2 / 3; text-align: center; }
+#certificate { grid-column: 1 / 3; }
 
     /* Course Cards Grid (3 Columns) */
-    #course-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
+#course-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
 
-    .course-card {
-        transition: transform 0.2s;
-    }
+.course-card {
+    transition: transform 0.2s;
+}
     
-    .course-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
+.course-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
 }

@@ -1,3 +1,4 @@
+// ---Responsive Navigation Toggle ---
 function initializeMobileMenu() {
   const toggleBtn = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
@@ -8,7 +9,6 @@ function initializeMobileMenu() {
     navMenu.classList.toggle("open");
   });
 }
-
 const YearElement = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
 
