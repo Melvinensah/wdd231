@@ -7,8 +7,6 @@ const courses = [
     { subject: 'WDD', number: 231, title: 'Frontend Web Development I', credits: 2, completed: false }
 ];
 
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
 
 const container = document.getElementById('course-cards');
 const totalCreditsDisplay = document.getElementById('total-credits');
@@ -28,10 +26,6 @@ function displayCourses(filter = 'All') {
 
     totalCreditsDisplay.textContent = `Total Credits: ${filtered.reduce((sum, c) => sum + c.credits, 0)}`;
 }
-
-document.getElementById('menu').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('show');
-});
 
 document.querySelectorAll('.filter-buttons button').forEach(btn => {
     btn.addEventListener('click', (e) => displayCourses(e.target.id.toUpperCase()));
