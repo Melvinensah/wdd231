@@ -4,6 +4,15 @@
 body { font-family: sans-serif; margin: 0; background-color: #ddd; display: flex; flex-direction: column; align-items: center; }
 body > * { width: 100%; max-width: 1200px; background: #fff; }
 
+p {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6; /* Improves readability for serif fonts */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .header-container { 
     display: flex;
     flex-wrap: wrap;
@@ -12,28 +21,14 @@ body > * { width: 100%; max-width: 1200px; background: #fff; }
     background-color: transparent; }
 #menu-toggle { margin-left: auto; cursor: pointer; }
 .branding {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 15px;
-    background-color: #2c3e50;
+    padding: 10px 15px;
+    background-color: #2c3e50; /* Dark Navy for Branding */
     color: white;
     
-    /* Force full width and spacing */
-    flex: 0 0 100%;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: space-between; /* Pushes button to the right */
-}
-
-#menu-toggle {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: block; /* Ensures it is visible */
-    margin-left: auto; /* Pushes it to the right within branding */
 }
 
 #nav-menu.show { display: flex; }
@@ -77,25 +72,21 @@ section h2 { width: 100%; background: #333; color: white; margin: 0; padding: 10
 .course-card { padding: 15px; background: #ccc; border: 2px solid #333; text-align: center; font-weight: bold; border-radius: 5px; }
 .completed { background: #8bc34a; border-color: #558b2f; color: white; }
 .filter-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 15px;                            /* Match your gridContainer gap */
-    padding: 20px;
+   
+    display: flex; /* Changed from grid to flex for better control */
+    gap: 10px;
+    padding: 15px;
     width: 100%;
-    margin: 0;                            /* Remove auto margin to let it fill space */
     box-sizing: border-box;
 }
 
-/* Ensure buttons fill their grid cells */
 .filter-buttons button {
-    width: 100%;
-    padding: 12px 10px;
-    font-size: 1.1rem;
+   flex: 1;      /* Makes every button grow to fill the row equally */
+    padding: 12px;
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #333;
-    background-color: #f0f0f0;
+    font-size: 1rem;
 }
+
 .filter-buttons button:hover {
     background-color: #ddd;
 }

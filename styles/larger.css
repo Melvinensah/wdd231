@@ -1,35 +1,20 @@
 @media (min-width: 768px) {
+    .header-container { flex-direction: column; }
     #menu-toggle { display: none; }
-    
-    .header-container {
-       flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 0;
-    }
-    
-    /* Branding wrapper (Logo + Span) */
-    .branding {
-        flex: 0 0 auto; /* Stop it from taking 100% width */
-        width: auto;
-    }
-    
-    #menu-toggle {
-        display: none; /* Hide toggle on desktop */
-    }
-    
-    /* Navigation sits below the branding */
-    #nav-menu { 
-        display: flex !important; 
-        flex-direction: row; 
-        flex: 0 0 100%; /* Forces the nav to start on a new row */
-        background: none; 
-        margin-top: 10px;
+   #nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-start; /* Aligns nav items to the left */
         border-top: 1px solid #555;
     }
     
-    /* Grid adjustments */
+    #nav-menu a {
+        border-bottom: none;
+        padding: 15px 30px;
+    }
     .gridContainer { grid-template-columns: repeat(3, 1fr); }
     #about { grid-column: span 2; }
+    #student-photo { grid-column: span 1; }
     #certificate { grid-column: span 3; }
     #course-cards { grid-template-columns: repeat(3, 1fr); }
 }
