@@ -1,54 +1,35 @@
 @media (min-width: 768px) {
-    /* Navigation Desktop */
-
-#menu-toggle {
-  display: none !important; /* Removes mobile toggle option */
-}
-
-nav {
-  display: flex !important; /* Locks navigation block horizontal bar on view */
-  position: static;
-  flex-direction: row;
-  width: auto;
-  box-shadow: none;
-  padding: 0;
-}
-
-nav a {
-  border-bottom: none;
-  margin: 0 0.25rem;
-}
-
-
-    /* Main Grid Layout (Matches Wireframe) */
-.grid.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
-
-#about { grid-column: 1 / 2; }
-#student-photo { grid-column: 2 / 3; text-align: center; }
-#certificate { grid-column: 1 / 3; }
-
-    /* Course Cards Grid (3 Columns) */
-#course-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.course-card {
-    transition: transform 0.2s;
-}
-    
-.course-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
-}
-
-/* @media (min-width: 768px) {
     #menu-toggle { display: none; }
-    #nav-menu { display: flex !important; flex-direction: row; background: none; }
-    #nav-menu a { border: none; padding: 1rem; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-} */
+    
+    .header-container {
+       flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    
+    /* Branding wrapper (Logo + Span) */
+    .branding {
+        flex: 0 0 auto; /* Stop it from taking 100% width */
+        width: auto;
+    }
+    
+    #menu-toggle {
+        display: none; /* Hide toggle on desktop */
+    }
+    
+    /* Navigation sits below the branding */
+    #nav-menu { 
+        display: flex !important; 
+        flex-direction: row; 
+        flex: 0 0 100%; /* Forces the nav to start on a new row */
+        background: none; 
+        margin-top: 10px;
+        border-top: 1px solid #555;
+    }
+    
+    /* Grid adjustments */
+    .gridContainer { grid-template-columns: repeat(3, 1fr); }
+    #about { grid-column: span 2; }
+    #certificate { grid-column: span 3; }
+    #course-cards { grid-template-columns: repeat(3, 1fr); }
+}
