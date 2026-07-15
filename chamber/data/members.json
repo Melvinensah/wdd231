@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "BBEM Technical Limited",
+      "address": "15 Percival Street, Freetown",
+      "phone": "+232-76-123456",
+      "website": "https://www.bbemtechnical.sl",
+      "image": "bbem.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Moi Golden Carpentry",
+      "address": "Main Motor Road, Congo Cross",
+      "phone": "+232-88-987654",
+      "website": "https://www.moigoldencarpentry.sl",
+      "image": "carpentry.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Alafia Bakery",
+      "address": "22 Wilkinson Road, Freetown",
+      "phone": "+232-30-555123",
+      "website": "https://www.alafiabakery.sl",
+      "image": "bakery.webp",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Ensign Cleaning Services",
+      "address": "40 Lumley Road, Freetown",
+      "phone": "+232-99-444888",
+      "website": "https://www.ensigncleaning.sl",
+      "image": "cleaning.webp",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Baby-Bless Fashion Boutique",
+      "address": "12 Kissy Road, Freetown",
+      "phone": "+232-77-222333",
+      "website": "https://www.babyblessfashion.sl",
+      "image": "fashion.webp",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Freetown Electrical Works",
+      "address": "88 Blackhall Road, Freetown",
+      "phone": "+232-76-111000",
+      "website": "https://www.ftnelectrical.sl",
+      "image": "electrical.webp",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Hillside Solar Solutions",
+      "address": "Leicester Road, Freetown",
+      "phone": "+232-88-777666",
+      "website": "https://www.hillsidesolar.sl",
+      "image": "solar.webp",
+      "membershipLevel": 2
+    }
+  ]
+}
