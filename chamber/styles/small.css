@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Define a professional color palette */
+    --primary-color: #0b2a4b;      
+    --secondary-color: #e6f2ff;    
+    --accent-color: #ff9900;      
+    --text-color: #333333;
+    --border-color: #cccccc;
+}
+
+body {
+    max-width: fit-content;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stacks everything on mobile */
+    align-items: center;    /* Centers everything on mobile */
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center; /* Center the branding on mobile */
+}
+
+span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#nav-menu.active {
+    display: flex;
+}
+
+#nav-menu {
+    display: none; /* Hidden by default until JS toggles it */
+    flex-direction: column; /* Vertical stack for mobile menu */
+    width: 100%;
+    text-align: center;
+}
+#menu-toggle { margin-left: auto; cursor: pointer; }
+#nav-menu.show { display: flex; }
+
+/* Ensure links inherit or contrast well with this background */
+#nav-menu a {
+   color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #4a6278;
+    transition: background-color 0.3s ease;
+}
+
+#nav-menu a:hover {
+   background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center; /* Centers flex items horizontally */
+    gap: 20px;               /* Adds space between the buttons */
+    margin: 20px 0;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.list-view section {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Card Styling */
+#directory-cards section {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+#directory-cards section:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Button Styling */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 100%; 
+}
+
+.contact-info {
+    color: var(--secondary-color);
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.social-media { 
+    padding: 20px; /* Reduced vertical padding */
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Slightly reduced gap */ 
+}
+.social-media img {
+    width: 24px;  /* Reduced from 30px */
+    height: 24px;
+}
+.info {
+    color: white;
+    padding: 10px 15px; /* Reduced vertical padding */
+    font-size: 0.9rem;  /* Slightly smaller text to keep it tidy */ 
+}
+.info p {
+    margin: 5px 0; /* Tighten the spacing between lines */
+}

@@ -1,0 +1,46 @@
+@media (min-width: 64em) {
+    /* 1. Ensure the parent acts as a flex container */
+    .header-container {
+        display: flex;
+        flex-direction: row;          /* Aligns Branding and Nav horizontally */
+        justify-content: space-between; /* This is the key: pushes Branding left, Nav right */
+        align-items: center;            /* This centers them vertically */
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* 2. Reset the branding to sit left */
+    .branding {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--secondary-color);
+    }
+
+    /* 3. Reset the nav-menu to sit right */
+    #nav-menu {
+        display: flex;
+        flex-direction: row; /* Forces horizontal */
+        gap: 20px;
+        align-items: center;
+    }
+
+    #menu-toggle { display: none; } /* Hide the toggle button on larger screens */
+
+    .view-toggle {
+    display: flex;
+    justify-content: center; /* Centers flex items horizontally */
+    gap: 20px;               /* Adds space between the buttons */
+    margin: 20px 0;
+    }
+    
+    footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 100%; 
+    }
+}

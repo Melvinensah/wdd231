@@ -1,16 +1,25 @@
-const url = 'data/members.json';
+const url = 'data/members.json'; // Path fixed
 const display = document.querySelector("#directory-cards");
 
-// Auto-fill Footer Date
-document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
+// Initialize functions
+document.addEventListener("DOMContentLoaded", () => {
+    getMembers();
+    displayRequiredFooterData();
+});
+
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data.members);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        displayMembers(data.members);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
 }
 
 const displayMembers = (members) => {
+    display.innerHTML = ""; // Clear existing
     members.forEach((member) => {
         let section = document.createElement('section');
         section.innerHTML = `
@@ -25,17 +34,12 @@ const displayMembers = (members) => {
 };
 
 // Toggle Functionality
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-
-gridbutton.addEventListener("click", () => {
+document.querySelector("#grid").addEventListener("click", () => {
     display.classList.add("grid-view");
     display.classList.remove("list-view");
 });
 
-listbutton.addEventListener("click", () => {
+document.querySelector("#list").addEventListener("click", () => {
     display.classList.add("list-view");
     display.classList.remove("grid-view");
 });
-
-getMembers();

@@ -3,9 +3,9 @@
     {
       "name": "BBEM Technical Limited",
       "address": "15 Percival Street, Freetown",
-      "phone": "+232-76-123456",
+      "phone": "+232-80-827547",
       "website": "https://www.bbemtechnical.sl",
-      "image": "bbem.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 3
     },
     {
@@ -13,7 +13,7 @@
       "address": "Main Motor Road, Congo Cross",
       "phone": "+232-88-987654",
       "website": "https://www.moigoldencarpentry.sl",
-      "image": "carpentry.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 2
     },
     {
@@ -21,7 +21,7 @@
       "address": "22 Wilkinson Road, Freetown",
       "phone": "+232-30-555123",
       "website": "https://www.alafiabakery.sl",
-      "image": "bakery.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 1
     },
     {
@@ -29,7 +29,7 @@
       "address": "40 Lumley Road, Freetown",
       "phone": "+232-99-444888",
       "website": "https://www.ensigncleaning.sl",
-      "image": "cleaning.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 2
     },
     {
@@ -37,7 +37,7 @@
       "address": "12 Kissy Road, Freetown",
       "phone": "+232-77-222333",
       "website": "https://www.babyblessfashion.sl",
-      "image": "fashion.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 3
     },
     {
@@ -45,7 +45,7 @@
       "address": "88 Blackhall Road, Freetown",
       "phone": "+232-76-111000",
       "website": "https://www.ftnelectrical.sl",
-      "image": "electrical.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 1
     },
     {
@@ -53,8 +53,17 @@
       "address": "Leicester Road, Freetown",
       "phone": "+232-88-777666",
       "website": "https://www.hillsidesolar.sl",
-      "image": "solar.webp",
+      "image": "images/bbem_Logo.webp",
       "membershipLevel": 2
+    },
+    {
+      "name": "DD Cakes",
+      "address": "Upper Allentown, Freetown",
+      "phone": "+232-30-888999",
+      "website": "https://www.ddcakes.sl",
+      "image": "images/bbem_Logo.webp",
+      "membershipLevel": 1
     }
+
   ]
 }
