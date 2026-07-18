@@ -1,5 +1,5 @@
 @media (min-width: 64em) {
-    body {
+    body {width: 100%;
         margin: 0 auto;
     }
     /* 1. Ensure the parent acts as a flex container */
