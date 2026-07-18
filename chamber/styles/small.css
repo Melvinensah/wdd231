@@ -55,7 +55,6 @@ span {
     text-align: center;
 }
 #menu-toggle { margin-left: auto; cursor: pointer; }
-#nav-menu.show { display: flex; }
 
 /* Ensure links inherit or contrast well with this background */
 #nav-menu a {
@@ -71,6 +70,19 @@ span {
    background-color: var(--accent-color);
     color: var(--text-color);
 }
+
+body { font-family: sans-serif; margin: 0; background-color: #ddd; display: flex; flex-direction: column; align-items: center; }
+body > * { width: 100%; max-width: 1200px; background: #fff; }
+
+p {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6; /* Improves readability for serif fonts */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .view-toggle {
     display: flex;
@@ -104,6 +116,13 @@ span {
     padding: 15px;
     border-radius: 8px;
     transition: transform 0.2s ease;
+}
+
+#directory-cards section img {
+    width: 100%;
+    max-width: 200px;  /* Limits maximum width */
+    height: 120px;     /* Locks a standard height row-wide */
+    object-fit: contain; /* Centers and scales logo inside the box without clipping or stretching */
 }
 
 #directory-cards section:hover {

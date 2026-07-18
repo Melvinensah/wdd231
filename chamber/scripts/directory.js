@@ -1,12 +1,10 @@
-const url = 'data/members.json'; // Path fixed
+const url = 'data/members.json'; 
 const display = document.querySelector("#directory-cards");
 
-// Initialize functions
+// Only run directory tasks here
 document.addEventListener("DOMContentLoaded", () => {
     getMembers();
-    displayRequiredFooterData();
 });
-
 
 async function getMembers() {
     try {

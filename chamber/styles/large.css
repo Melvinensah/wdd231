@@ -1,4 +1,7 @@
 @media (min-width: 64em) {
+    body {
+        margin: 0 auto;
+    }
     /* 1. Ensure the parent acts as a flex container */
     .header-container {
         display: flex;
