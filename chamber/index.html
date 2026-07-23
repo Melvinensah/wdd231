@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Home</title>
+  <meta name="description" content="Welcome to the Chamber of Commerce Home Page. Discover local events, weather updates, and member business spotlights.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/weather.js"></script>
+  <script type="module" src="scripts/spotlights.js"></script>
+</head>
+<body>
+  <header>
+        <div class="header-container">
+            <div class="branding">
+                <a href="index.html" class="logo-link">
+                    <img src="../images/cloud-sun-solid-full.svg" width="30" height="30" alt="Logo">
+                </a>    
+                <span>Checsil Avenue Chamber of Commerce</span>                
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            </div>
+            
+            <nav id="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>    
+  </header>
+
+  <main class="home-grid">
+    <!-- Hero Section with Call to Action -->
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+        <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+        <img src="images/hero-small.webp" alt="Chamber Hero Banner" width="1200" height="600">
+      </picture>
+      <div class="cta-overlay">
+        <h2>Join the Chamber Today!</h2>
+        <a href="join.html" class="cta-btn">Become a Member</a>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-card">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Annual Business Expo:</strong> Oct 15 at 10:00 AM</li>
+        <li><strong>Networking Luncheon:</strong> Nov 3 at 12:00 PM</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather-card">
+      <h2>Local Weather</h2>
+      <div id="current-weather">
+        <!-- Filled dynamically by weather.js -->
+      </div>
+      <hr>
+      <h3>3-Day Forecast</h3>
+      <div id="forecast">
+        <!-- Filled dynamically by weather.js -->
+      </div>
+    </section>
+
+    <!-- Member Spotlights Section -->
+    <section class="spotlights-container">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-cards" class="spotlight-grid">
+        <!-- Filled dynamically by spotlights.js -->
+      </div>
+    </section>
+  </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Checsil Avenue Chamber of Commerce</strong></p>
+            <p>2B Checsil Avenue Grafton</p>
+            <p>+23280827547</p>
+            <p><a href="mailto:melvinbunduka@gmail.com">melvinbunduka@gmail.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/melvinensah.bunduka" target="_blank" rel="noopener noreferrer">
+                <img src="../images/facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://x.com/BundukaEnsah" target="_blank" rel="noopener noreferrer">
+                <img src="../images/twitterx.svg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/melvin-bunduka-003a05179" target="_blank" rel="noopener noreferrer">
+                <img src="../images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+            </a>
+        </div>          
+        <div class="info">
+            <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+</body>
+</html>
