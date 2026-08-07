@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for the Chamber of Commerce. This page contains a directory of businesses and their contact information.">
-    <meta name="author" content="Melvin Ensah Bunduka">
-    <title>Directory</title>
-
+    <title>Application Submitted | Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Chamber of Commerce.">
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
@@ -21,13 +19,13 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="icon" href="favicon.ico">
-
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
-    <header >
+    <header>
         <div class="header-container">
             <div class="branding">
                 <a href="index.html" class="logo-link">
@@ -41,18 +39,23 @@
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="#">Discover</a>
+                <a href="discover.html">Discover</a>
             </nav>
         </div>    
-    </header>    
-     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="directory-cards" class="grid-view"></div>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Joining!</h1>
+        <p class="success-msg">Your application has been successfully submitted. We will review your details and get in touch shortly.</p>
+        
+        <section class="submitted-data-card">
+            <h2>Application Summary</h2>
+            <div id="results">
+                <!-- JavaScript populates form parameters here -->
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="contact-info">
             <p><strong>Checsil Avenue Chamber of Commerce</strong></p>
@@ -76,8 +79,6 @@
             <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
-
     </footer>
-    
 </body>
 </html>

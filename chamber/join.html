@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber | Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership in the Chamber of Commerce. Explore non-profit, bronze, silver, and gold membership tiers.">
+    <!-- Link to your shared CSS template -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+    <meta property="og:image" content="https://yourdomain.com/chamber/images/og-image.jpg">
+    <meta property="og:description" content="Local business directory for the Chamber of Commerce.">    
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <!-- Header shared across site -->
+    <header>
+        <div class="header-container">
+            <div class="branding">
+                <a href="index.html" class="logo-link">
+                    <img src="../images/cloud-sun-solid-full.svg" width="30" height="30" alt="Logo">
+                </a>    
+                <span>Checsil Avenue Chamber of Commerce</span>                
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            </div>
+            
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>    
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+        
+        <div class="join-container">
+            <!-- Application Form -->
+            <form method="get" action="thankyou.html" class="join-form">
+                <h2>Applicant Information</h2>
+                
+                <label>
+                    First Name *
+                    <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name *
+                    <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="title" title="Enter your title (minimum 7 characters, alphabets, hyphens, and spaces only)" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+                </label>
+
+                <label>
+                    Email Address *
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="name@example.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone Number *
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/Organization Name *
+                    <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level *
+                    <select name="membership" id="membership" required>
+                        <option value="" disabled selected>Select a Membership Level...</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business/Organization Description
+                    <textarea name="description" title="Provide a brief description of your organization" rows="4"></textarea>
+                </label>
+
+                <!-- Hidden timestamp field populated dynamically -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Join the Chamber" class="submit-btn">
+            </form>
+
+            <!-- Membership Cards with Initial Load Animation -->
+            <section class="membership-cards">
+                <h2>Membership Tiers</h2>
+                
+                <div class="card card-np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <button class="modal-btn" data-modal="np-modal">View Benefits</button>
+                </div>
+
+                <div class="card card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Standard introductory business benefits.</p>
+                    <button class="modal-btn" data-modal="bronze-modal">View Benefits</button>
+                </div>
+
+                <div class="card card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility and event discounts.</p>
+                    <button class="modal-btn" data-modal="silver-modal">View Benefits</button>
+                </div>
+
+                <div class="card card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure, spotlight positions, and VIP access.</p>
+                    <button class="modal-btn" data-modal="gold-modal">View Benefits</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modals for Membership Benefits -->
+    <dialog id="np-modal" class="membership-modal">
+        <h3>Non-Profit (NP) Benefits</h3>
+        <p>Designed specifically for registered non-profit entities with zero membership fees. Includes listing in the community directory and basic newsletter access.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" class="membership-modal">
+        <h3>Bronze Level Benefits</h3>
+        <p>Includes standard directory placement, access to regular monthly mixers, and standard event discounts.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" class="membership-modal">
+        <h3>Silver Level Benefits</h3>
+        <p>Includes priority directory listing, 15% discount on all paid chamber events, and occasional social media highlights.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" class="membership-modal">
+        <h3>Gold Level Benefits</h3>
+        <p>Includes premier homepage spotlight positioning, free entry to all major chamber events, specialized corporate training, and VIP access.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <!-- Footer shared across site -->
+    <footer>
+        <div class="contact-info">
+            <p><strong>Checsil Avenue Chamber of Commerce</strong></p>
+            <p>2B Checsil Avenue Grafton</p>
+            <p>+23280827547</p>
+            <p><a href="mailto:melvinbunduka@gmail.com">melvinbunduka@gmail.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/melvinensah.bunduka" target="_blank" rel="noopener noreferrer">
+                <img src="../images/facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://x.com/BundukaEnsah" target="_blank" rel="noopener noreferrer">
+                <img src="../images/twitterx.svg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/melvin-bunduka-003a05179" target="_blank" rel="noopener noreferrer">
+                <img src="../images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+            </a>
+        </div>          
+        <div class="info">
+            <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

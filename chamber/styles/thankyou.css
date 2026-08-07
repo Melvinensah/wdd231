@@ -1,0 +1,23 @@
+.thankyou-main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.submitted-data-card {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.submitted-data-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submitted-data-card li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
