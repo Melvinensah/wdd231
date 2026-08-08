@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for the Chamber of Commerce. This page contains a directory of businesses and their contact information.">
-    <meta name="author" content="Melvin Ensah Bunduka">
-    <title>Directory</title>
-
+    <title>Discover the Area | Chamber of Commerce</title>
+    <meta name="description" content="Explore local attractions, demographics, and points of interest in Sierra Leone through our chamber discover page.">
+    
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
     <meta property="og:image" content="https://yourdomain.com/chamber/images/og-image.jpg">
     <meta property="og:description" content="Local business directory for the Chamber of Commerce.">    
+
     
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/main.js" defer></script>
+
+    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
-    <header >
+    <header>
         <div class="header-container">
             <div class="branding">
                 <a href="index.html" class="logo-link">
@@ -43,17 +48,33 @@
                 <a href="discover.html">Discover</a>
             </nav>
         </div>    
-    </header>    
-     <main>
-        <h1>Directory</h1>
-        <div class="view-toggle">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Our Region</h1>
+        
+        <!-- Visitor Message Sidebar / Banner Area -->
+        <div id="visitor-message" class="visitor-banner">
+            <span id="visitor-text">Loading visitor insights...</span>
         </div>
-        <div id="directory-cards" class="grid-view"></div>
+
+        <!-- Grid Container for 8 Cards and Demographics Sidebar -->
+        <div class="discover-grid">
+            <section class="demographics-card">
+                <h2>Area Demographics & Info</h2>
+                <p><strong>Primary Industry:</strong> Agriculture, Mining, Trade & Technology</p>
+                <p><strong>Population:</strong> Dynamic & Growing Community</p>
+                <p><strong>Climate:</strong> Tropical Seasonality with Rich Coastal Ecology</p>
+            </section>
+
+            <!-- Dynamic cards container populated by JS -->
+            <div id="cards-container" class="cards-grid-area">
+                <!-- 8 Cards injected via discover.js -->
+            </div>
+        </div>
     </main>
+
     <footer>
-        <div class="contact-info">
             <p><strong>Checsil Avenue Chamber of Commerce</strong></p>
             <p>2B Checsil Avenue Grafton</p>
             <p>+23280827547</p>
@@ -75,8 +96,6 @@
             <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
-
     </footer>
-    
 </body>
 </html>

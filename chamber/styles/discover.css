@@ -1,0 +1,98 @@
+.discover-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.visitor-banner {
+    background-color: #eaf2f8;
+    border-left: 5px solid #004080;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #003366;
+    border-radius: 4px;
+}
+
+.demographics-card {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.cards-grid-area {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.cards-grid-area .card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-grid-area .card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #004080;
+}
+
+.cards-grid-area figure {
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.cards-grid-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.cards-grid-area address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.cards-grid-area p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.learn-more-btn:hover {
+    background-color: #002b55;
+}
+
+/* ==========================================
+   CSS Grid Areas & Responsive Breakpoints
+   ================================---------- */
+
+/* Small Screens (320px to 640px) - Single column, no hover effect */
+@media (max-width: 640px) {
+    .cards-grid-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+
