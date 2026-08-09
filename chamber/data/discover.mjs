@@ -15,13 +15,13 @@ export const discoverItems = [
         title: "Banana Islands",
         address: "South-West of Freetown Peninsula",
         description: "An idyllic archipelago offering pristine beaches, rich colonial history, diving, and tranquil escape.",
-        photo: "images/banana.webp"
+        photo: "images/lumley.webp"
     },
     {
         title: "National Railway Museum",
         address: "Cline Town, Freetown",
         description: "Preserves the heritage of Sierra Leone's historic railway system with vintage steam locomotives.",
-        photo: "images/railway.webp"
+        photo: "images/tacugama.webp"
     },
     {
         title: "Cotton Tree",
@@ -33,18 +33,18 @@ export const discoverItems = [
         title: "Mount Bintumani",
         address: "Loma Mountains, Koinadugu District",
         description: "The highest peak in Sierra Leone, providing challenging hiking trails and breathtaking highland views.",
-        photo: "images/bintumani.webp"
+        photo: "images/tacugama.webp"
     },
     {
         title: "Outamba-Kilimi National Park",
         address: "Northern Province, Sierra Leone",
         description: "A diverse wildlife reserve featuring savannahs, rivers, hippos, and various primate species.",
-        photo: "images/outamba.webp"
+        photo: "images/cottontree.webp"
     },
     {
         title: "Sierra Leone National Museum",
         address: "Pademba Road, Freetown",
         description: "Showcases historical artifacts, traditional masks, cultural regalia, and the nation's rich heritage.",
-        photo: "images/museum.webp"
+        photo: "images/lumley.webp"
     }
 ];
