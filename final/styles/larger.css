@@ -1,0 +1,110 @@
+@media screen and (min-width: 769px) {
+  .logo-img {
+    height: 48px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    width: auto;
+    border-bottom: none;
+    box-shadow: none;
+  }
+
+  nav ul li a {
+    padding: 0.5rem;
+    display: inline;
+  }
+
+  nav ul li a:hover, nav ul li a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  /* Hero Section Larger Screen Adjustments */
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero-img-wrapper {
+    height: 500px;
+  }
+
+  .hero-content {
+    padding: 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  main {
+    margin: 2rem auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    transition: var(--transition);
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(19, 64, 116, 0.2);
+  }
+
+  form {
+    padding: 2rem;
+    max-width: 600px;
+  }
+
+  dialog {
+    width: 90%;
+  }
+
+  .modal-img {
+    height: 250px;
+  }
+
+  .modal-body-content {
+    padding: 2rem;
+  }
+
+  .close-modal {
+    margin: 0 2rem 2rem auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 100%; 
+  }
+
+  
+}

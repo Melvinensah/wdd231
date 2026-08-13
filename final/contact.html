@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BBEM Technical Limited</title>
+  <meta name="description" content="Get in touch with BBEM Technical Limited for plumbing, electrical, HVAC, and solar quotes.">
+  <meta name="author" content="Melvin Ensah Bunduka">
+  
+  <!-- Google Fonts Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/bbem_Logo.webp"  width="100" height="100" alt="BBEM Technical Limited Logo" class="logo-img">
+                <span>BBEM Technical Limited</span>  
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="../chamber/index.html">Chamber</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">Request a Service Consultation</h2>
+    <form action="thank-you.html" method="GET">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="service-type">Select Service Needed:</label>
+        <select id="service-type" name="serviceType" required>
+          <option value="" disabled selected>-- Choose a Service --</option>
+          <option value="electrical">Electrical Wiring & Repairs</option>
+          <option value="plumbing">Plumbing & Drainage</option>
+          <option value="hvac">HVAC & Air Conditioning</option>
+          <option value="solar">Solar Energy Systems</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Project Details / Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Submit Inquiry</button>
+    </form>
+  </main>
+
+  <footer>
+        <div class="contact-info">
+            <p><strong>BBEM Technical Limited</strong></p>
+            <p>2B Checsil Avenue Grafton</p>
+            <p>+23280827547</p>
+            <p><a href="mailto:melvinbunduka@gmail.com">melvinbunduka@gmail.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/melvinensah.bunduka" target="_blank" rel="noopener noreferrer">
+                <img src="../images/facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://x.com/BundukaEnsah" target="_blank" rel="noopener noreferrer">
+                <img src="../images/twitterx.svg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/melvin-bunduka-003a05179" target="_blank" rel="noopener noreferrer">
+                <img src="../images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+            </a>
+        </div>          
+        <div class="info">
+            <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Resource Attributions</a> | <a href="PASTE_YOUR_PUBLIC_VIDEO_LINK_HERE" target="_blank">Project Video Demonstration</a></p>
+        </div>
+  </footer>
+</body>
+</html>

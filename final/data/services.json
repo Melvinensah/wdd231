@@ -1,0 +1,139 @@
+{
+  "technicalServices": [
+    {
+      "id": 1,
+      "title": "Residential Electrical Wiring",
+      "category": "electrical",
+      "description": "Complete house wiring, breaker panel upgrades, and safe outlet installations.",
+      "priceEstimate": "$150/hr",
+      "icon": "⚡",
+      "image": "images/services/electrical_residential.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Commercial Power Distribution",
+      "category": "electrical",
+      "description": "High-capacity transformer maintenance, heavy-duty cabling, and industrial grid support.",
+      "priceEstimate": "$300/hr",
+      "icon": "🏢",
+      "image": "images/services/electrical_commercial.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Emergency Electrical Fault Finding",
+      "category": "electrical",
+      "description": "24/7 rapid response diagnostics for short circuits, tripped breakers, and power loss.",
+      "priceEstimate": "$200/hr",
+      "icon": "🚨",
+      "image": "images/services/electrical_emergency.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Smart Home Automation Setup",
+      "category": "electrical",
+      "description": "Installation of automated lighting systems, smart thermostats, and security panels.",
+      "priceEstimate": "$250 package",
+      "icon": "🏠",
+      "image": "images/services/electrical_smart.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Generator Installation & Servicing",
+      "category": "electrical",
+      "description": "Standby generator setup, automatic transfer switch (ATS) integration, and oil changes.",
+      "priceEstimate": "$350 flat",
+      "icon": "⚙️",
+      "image": "images/services/electrical_generator.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Residential Plumbing & Leak Repair",
+      "category": "plumbing",
+      "description": "Burst pipe detection, faucet replacements, and toilet repairs done cleanly.",
+      "priceEstimate": "$120/hr",
+      "icon": "🔧",
+      "image": "images/services/plumbing_repair.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Water Heater Maintenance",
+      "category": "plumbing",
+      "description": "Tankless and traditional water heater flushing, thermostat calibration, and replacement.",
+      "priceEstimate": "$180 flat",
+      "icon": "🚿",
+      "image": "images/services/plumbing_heater.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Drain Cleaning & Hydro Jetting",
+      "category": "plumbing",
+      "description": "High-pressure clearing of blocked sewer lines, grease traps, and stubborn sink clogs.",
+      "priceEstimate": "$220 service",
+      "icon": "💧",
+      "image": "images/services/plumbing_drain.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Bathroom Plumbing Remodeling",
+      "category": "plumbing",
+      "description": "Complete supply line and drainage rerouting for modern bathroom expansions.",
+      "priceEstimate": "Custom Quote",
+      "icon": "🛁",
+      "image": "images/services/plumbing_remodel.jpg"
+    },
+    {
+      "id": 10,
+      "title": "HVAC System Installation",
+      "category": "hvac",
+      "description": "Central air conditioning, split units, and forced-air furnace installations.",
+      "priceEstimate": "Custom Quote",
+      "icon": "❄️",
+      "image": "images/services/hvac_install.jpg"
+    },
+    {
+      "id": 11,
+      "title": "AC Tune-Up & Refrigerant Recharge",
+      "category": "hvac",
+      "description": "Coil cleaning, filter replacements, and eco-friendly R-410A refrigerant top-offs.",
+      "priceEstimate": "$160 flat",
+      "icon": "🌬️",
+      "image": "images/services/hvac_tuneup.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Ductwork Cleaning & Sealing",
+      "category": "hvac",
+      "description": "Sanitization and airtight sealing of air ducts to improve indoor air quality.",
+      "priceEstimate": "$280 flat",
+      "icon": "🌀",
+      "image": "images/services/hvac_ducts.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Solar Panel Array Installation",
+      "category": "solar",
+      "description": "Rooftop monocrystalline solar panel mounting and structural anchoring.",
+      "priceEstimate": "Custom Quote",
+      "icon": "☀️",
+      "image": "images/services/solar_install.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Solar Inverter & Battery Storage",
+      "category": "solar",
+      "description": "Lithium-ion battery bank integration and hybrid inverter setup for backup power.",
+      "priceEstimate": "Custom Quote",
+      "icon": "🔋",
+      "image": "images/services/solar_battery.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Off-Grid System Optimization",
+      "category": "solar",
+      "description": "Comprehensive load calculations and configuration for remote off-grid properties.",
+      "priceEstimate": "$300 audit",
+      "icon": "🌍",
+      "image": "images/services/solar_offgrid.jpg"
+    }
+  ]
+}

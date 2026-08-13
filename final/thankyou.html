@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | BBEM Technical Limited</title>
+  
+  <!-- Google Fonts Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">BBEM Technical Ltd</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="text-align: center; padding: 4rem 1rem;">
+    <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Thank You For Your Inquiry!</h2>
+    <p id="response-details" style="margin-bottom: 2rem;">We have received your request and will contact you shortly.</p>
+    <a href="index.html" class="btn">Return to Home</a>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('fullname');
+    const service = params.get('serviceType');
+    if (name && service) {
+      document.getElementById('response-details').innerHTML = `Thank you, <strong>${name}</strong>. Your inquiry regarding <strong>${service.toUpperCase()}</strong> has been submitted successfully.`;
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 BBEM Technical Limited. All rights reserved.</p>
+  </footer>
+</body>
+</html>

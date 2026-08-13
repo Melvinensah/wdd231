@@ -3,68 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBEM Mechanical & Electrical Contracting | Home</title>
-    <meta name="description" content="Professional electrical, HVAC, plumbing, and networking contracting services for residential and commercial infrastructure.">
+    <title>BBEM Technical Limited | Home</title>
+    <meta name="description" content="Professional plumbing, electrical, HVAC, and solar installations by BBEM Technical Limited.">
     <meta name="author" content="Melvin Ensah Bunduka">
-    <meta property="og:title" content="BBEM Mechanical & Electrical Contracting">
+    <meta property="og:title" content="BBEM Technical Limited">
+    <meta property="og:description" content="Expert facility solutions in electrical, plumbing, HVAC, and solar services.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts Integration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header-footer.css">
-    
-    <!-- Mobile Stylesheet (Loaded by default) -->
-    <link rel="stylesheet" href="styles/home-mobile.css">
-    
-    <!-- Desktop Stylesheet (Loaded only on screens 768px and wider) -->
-    <link rel="stylesheet" href="styles/home-desktop.css" media="(min-width: 768px)">
-    
-    <script type="module" src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="logo-container">
-            <span class="logo-text">BBEM Contracting</span>
-        </div>
-        <button id="menu-btn" aria-label="Toggle Navigation Menu">☰</button>
-        <nav id="nav-bar" class="nav-menu">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/bbem_Logo.webp"  width="100" height="100" alt="BBEM Technical Limited Logo" class="logo-img">
+                <span>BBEM Technical Limited</span>  
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="../chamber/index.html">Chamber</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Reliable Infrastructure & Technical Solutions</h1>
-                <p>Specializing in commercial electrical systems, HVAC troubleshooting, structured networking, and industrial plumbing maintenance.</p>
-                <a href="contact.html" class="cta-button">Request a Consultation</a>
+        <section id="hero">
+            <div class="hero-wrapper">
+                <img src="images/hero.webp" alt="BBEM Facility Maintenance Technician going through field checklist" class="hero-img">
+                <div class="hero-overlay-content">
+                <h1>Powering Your Infrastructure Safely</h1>
+                <p>BBEM Technical Limited delivers top-tier professional contracting services in electrical wiring, plumbing, HVAC systems, and solar installations.</p>
+                <a href="services.html" class="btn-cta">Explore Our Services</a>
+                </div>
             </div>
         </section>
+        
 
-        <section class="highlights-grid">
-            <div class="card">
-                <h2>Electrical Systems</h2>
-                <p>Three-phase high-voltage wiring, conventional motor control systems, and low-voltage relay configurations.</p>
-            </div>
-            <div class="card">
-                <h2>HVAC & Infrastructure</h2>
-                <p>Complete facility climate control, infrastructure diagnostics, and preventative mechanical maintenance.</p>
-            </div>
-            <div class="card">
-                <h2>Network Engineering</h2>
-                <p>Wi-Fi access point deployment, Cat6 Ethernet port terminations, and robust server rack component mapping.</p>
-            </div>
-        </section>
+        <h2 class="section-title">Why Choose BBEM Technical?</h2>
+        <div class="cards-grid">
+        <div class="service-card" style="padding: 1.5rem;">
+            <h3>Certified Expertise</h3>
+            <p>Our technicians are fully certified and equipped to handle residential, commercial, and industrial installations with precision.</p>
+        </div>
+        <div class="service-card" style="padding: 1.5rem;">
+            <h3>Reliable Support</h3>
+            <p>We pride ourselves on prompt emergency response times, transparent pricing, and robust infrastructure maintenance.</p>
+        </div>
+        <div class="service-card" style="padding: 1.5rem;">
+            <h3>Sustainable Energy</h3>
+            <p>Specializing in solar power setup and energy-efficient HVAC adjustments to minimize utility costs.</p>
+        </div>
+        </div>
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 BBEM Contracting. All rights reserved.</p>
-        <p><a href="attributions.html">Resource Attributions</a></p>
+    <footer>
+        <div class="contact-info">
+            <p><strong>BBEM Technical Limited</strong></p>
+            <p>2B Checsil Avenue Grafton</p>
+            <p>+23280827547</p>
+            <p><a href="mailto:melvinbunduka@gmail.com">melvinbunduka@gmail.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/melvinensah.bunduka" target="_blank" rel="noopener noreferrer">
+                <img src="../images/facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://x.com/BundukaEnsah" target="_blank" rel="noopener noreferrer">
+                <img src="../images/twitterx.svg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/melvin-bunduka-003a05179" target="_blank" rel="noopener noreferrer">
+                <img src="../images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+            </a>
+        </div>          
+        <div class="info">
+            <p>&copy; <span id="currentyear"></span> | Melvin Ensah Bunduka | Sierra Leone</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Resource Attributions</a> | <a href="PASTE_YOUR_PUBLIC_VIDEO_LINK_HERE" target="_blank">Project Video Demonstration</a></p>
+        </div>
     </footer>
 </body>
 </html>
