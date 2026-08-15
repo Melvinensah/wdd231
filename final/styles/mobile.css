@@ -34,7 +34,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(11, 37, 69, 0.2);
+  box-shadow: 0 2px 5px var(--accent-color);
 }
 
 .nav-container {
@@ -196,7 +196,7 @@ main {
 .filter-btn {
   background-color: var(--secondary-color);
   color: var(--white);
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--s);
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   cursor: pointer;
@@ -220,7 +220,7 @@ main {
   background: var(--white);
   border: 1px solid var(--accent-color);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(11, 37, 69, 0.1);
+  box-shadow: 0 4px 6px var(--accent-color);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -297,7 +297,7 @@ form {
   border: 1px solid var(--accent-color);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(11, 37, 69, 0.1);
+  box-shadow: 0 4px 6px var(--secondary-color);
   width: 100%;
   margin: 0 auto;
 }
@@ -335,7 +335,7 @@ dialog {
   padding: 0;
   width: 95%;
   max-width: 500px;
-  box-shadow: 0 5px 15px rgba(11, 37, 69, 0.3);
+  box-shadow: 0 5px 15px var(--secondary-color);
   margin: auto;
   overflow: hidden;
   background-color: var(--white);
@@ -343,7 +343,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background-color: rgba(11, 37, 69, 0.7);
+  background-color: var(--secondary-color);
 }
 
 .modal-img {
