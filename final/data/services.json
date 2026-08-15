@@ -7,7 +7,7 @@
       "description": "Complete house wiring, breaker panel upgrades, and safe outlet installations.",
       "priceEstimate": "$150/hr",
       "icon": "⚡",
-      "image": "images/services/electrical_residential.jpg"
+      "image": "images/electrical.webp"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "High-capacity transformer maintenance, heavy-duty cabling, and industrial grid support.",
       "priceEstimate": "$300/hr",
       "icon": "🏢",
-      "image": "images/services/electrical_commercial.jpg"
+      "image": "images/electrical.webp"
     },
     {
       "id": 3,
@@ -25,16 +25,17 @@
       "description": "24/7 rapid response diagnostics for short circuits, tripped breakers, and power loss.",
       "priceEstimate": "$200/hr",
       "icon": "🚨",
-      "image": "images/services/electrical_emergency.jpg"
+      "image": "images/electrical.webp"
     },
     {
+     
       "id": 4,
       "title": "Smart Home Automation Setup",
       "category": "electrical",
       "description": "Installation of automated lighting systems, smart thermostats, and security panels.",
       "priceEstimate": "$250 package",
       "icon": "🏠",
-      "image": "images/services/electrical_smart.jpg"
+      "image": "images/electrical.webp"
     },
     {
       "id": 5,
@@ -43,7 +44,7 @@
       "description": "Standby generator setup, automatic transfer switch (ATS) integration, and oil changes.",
       "priceEstimate": "$350 flat",
       "icon": "⚙️",
-      "image": "images/services/electrical_generator.jpg"
+      "image": "images/electrical.webp"
     },
     {
       "id": 6,
@@ -52,7 +53,7 @@
       "description": "Burst pipe detection, faucet replacements, and toilet repairs done cleanly.",
       "priceEstimate": "$120/hr",
       "icon": "🔧",
-      "image": "images/services/plumbing_repair.jpg"
+      "image": "images/plumbing.webp"
     },
     {
       "id": 7,
@@ -61,7 +62,7 @@
       "description": "Tankless and traditional water heater flushing, thermostat calibration, and replacement.",
       "priceEstimate": "$180 flat",
       "icon": "🚿",
-      "image": "images/services/plumbing_heater.jpg"
+      "image": "images/plumbing.webp"
     },
     {
       "id": 8,
@@ -70,7 +71,7 @@
       "description": "High-pressure clearing of blocked sewer lines, grease traps, and stubborn sink clogs.",
       "priceEstimate": "$220 service",
       "icon": "💧",
-      "image": "images/services/plumbing_drain.jpg"
+      "image": "images/plumbing.webp"
     },
     {
       "id": 9,
@@ -79,7 +80,7 @@
       "description": "Complete supply line and drainage rerouting for modern bathroom expansions.",
       "priceEstimate": "Custom Quote",
       "icon": "🛁",
-      "image": "images/services/plumbing_remodel.jpg"
+      "image": "images/plumbing.webp"
     },
     {
       "id": 10,
@@ -88,7 +89,7 @@
       "description": "Central air conditioning, split units, and forced-air furnace installations.",
       "priceEstimate": "Custom Quote",
       "icon": "❄️",
-      "image": "images/services/hvac_install.jpg"
+      "image": "images/hvac.webp"
     },
     {
       "id": 11,
@@ -97,7 +98,7 @@
       "description": "Coil cleaning, filter replacements, and eco-friendly R-410A refrigerant top-offs.",
       "priceEstimate": "$160 flat",
       "icon": "🌬️",
-      "image": "images/services/hvac_tuneup.jpg"
+      "image": "images/hvac.webp"
     },
     {
       "id": 12,
@@ -106,7 +107,7 @@
       "description": "Sanitization and airtight sealing of air ducts to improve indoor air quality.",
       "priceEstimate": "$280 flat",
       "icon": "🌀",
-      "image": "images/services/hvac_ducts.jpg"
+      "image": "images/hvac.webp"
     },
     {
       "id": 13,
@@ -133,7 +134,7 @@
       "description": "Comprehensive load calculations and configuration for remote off-grid properties.",
       "priceEstimate": "$300 audit",
       "icon": "🌍",
-      "image": "images/services/solar_offgrid.jpg"
+      "image": "images/solar.jpg"
     }
   ]
 }
